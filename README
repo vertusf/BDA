@@ -1,0 +1,47 @@
+# the dataset provided is a large text corpus with over 370,000 rows and 2 columns used for part-of-speech tagging (grammatical tagging)
+# part-of speech (POS tagging) is the process where words within a sentence are assigned with a tag which indicates their functionality within the said sentence
+# the dataset is split into 2 columns, the first column is the words, accompanied by their corresponding part-of-speech tag (pos_tag)
+
+# this is a modified dataset. the original dataset is obtained from https://www.kaggle.com/datasets/ruchi798/part-of-speech-tagging 
+# the first column from the original dataset, which are row numbers are removed as they are non-essential when performing MapReduce
+
+# the pos_tag (s) are split into 25 categories, abbreviations and full names are as follows:
+#Abbreviation | Meaning
+#CC	            coordinating conjunction
+#CD	            cardinal digit
+#DT             determiner
+#EX           	existential there
+#FW            	foreign word
+#IN	            preposition/subordinating conjunction
+#JJ	            adjective (large)
+#JJR	          adjective, comparative (larger)
+#JJS          	adjective, superlative (largest)
+#LS	            list item marker
+#MD            	modal (could, will)
+#NN           	noun, singular
+#NNS           	noun plural
+#NNP          	proper noun, singular
+#NNPS           proper noun, plural
+#PDT          	predeterminer
+#POS           	possessive ending (parent\ 's)
+#PRP          	personal pronoun (hers, herself, him,himself)
+#PRP            dollar-sign	possessive pronoun (her, his, mine, my, our )
+#RB           	adverb (occasionally, swiftly)
+#RBR          	adverb, comparative (greater)
+#RBS          	adverb, superlative (biggest)
+#RP	            particle (about)
+#SYM            symbol
+#TO	            infinite marker (to)
+#UH             interjection (goodbye)
+#VB           	verb (ask)
+#VBG	          verb gerund (judging)
+#VBD           	verb past tense (pleaded)
+#VBN           	verb past participle (reunified)
+#VBP          	verb, present tense not 3rd person singular(wrap)
+#VBZ           	verb, present tense with 3rd person singular (bases)
+#WDT          	wh-determiner (that, what)
+#WP           	wh- pronoun (who)
+#WP             dollar-sign	possessive wh-pronoun
+#WRB           	wh- adverb (how)
+
+# the word_corpus.zip file is used to provide easy download access when using hadoop
